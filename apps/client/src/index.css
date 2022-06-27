@@ -1,0 +1,84 @@
+@font-face {
+	font-family: "Jetbrains Mono Bold";
+	src: local("JetBrains Mono Bold"),
+		url("./assets/fonts/JetBrains Mono Bold Nerd Font Complete.ttf") format("truetype");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Jetbrains Mono Medium";
+	src: local("JetBrains Mono Medium"),
+		url("./assets/fonts/JetBrains Mono Medium Nerd Font Complete.ttf") format("truetype");
+	font-weight: 500
+}
+@font-face {
+	font-family: "Jetbrains Mono Regular";
+	src: local("JetBrains Mono Regular"),
+		url("./assets/fonts/JetBrains Mono Regular Nerd Font Complete.ttf") format("truetype");
+	font-weight: 400;
+}
+
+* {
+	font-family: "Jetbrains Mono Regular"
+}
+
+@tailwind base;
+h1 {
+  @apply text-2xl;
+	color: white;
+}
+h2 {
+  @apply text-xl;
+	color: white;
+}
+h3 {
+  @apply text-lg;
+	color: white;
+}
+h4 {
+  @apply text-base;
+	color: white;
+}
+h5 {
+  @apply text-sm;
+	color: white;
+}
+p {
+	@apply text-xs;
+	color: white;
+
+}
+a {
+  @apply text-blue-600 underline;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.grid-sidebar {
+	display: grid;
+	z-index: 1;
+	grid-template-columns: 0px 1fr;
+	transition: grid-template-columns 1s ease-out;
+}
+
+.grid-sidebar-open{
+	grid-template-columns: 100px 1fr;
+}
+
+.contacts-collapse {
+	z-index: 0;
+	visibility: visible;
+	opacity: 1;
+	grid-column: 1/2;
+}
+
+.main {
+	z-index: 100;
+	background-color: blue;
+	grid-columns: 1fr
+}
+
+.side-login-panel {
+  transform: perspective(1000px);
+}
+
