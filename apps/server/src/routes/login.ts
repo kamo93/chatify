@@ -6,7 +6,6 @@ async function loginController(req: FastifyRequest, reply: FastifyReply) {
 
 const loginRoute: FastifyPluginAsync = async (
   fastify,
-  options: { prefix: string },
 ) =>  {
   fastify.route({
     method: 'POST',
@@ -17,7 +16,6 @@ const loginRoute: FastifyPluginAsync = async (
     handler: loginController,
   });
 
-  console.log(options);
   // server.post('/api/login', {}, loginController);
   // continue with the next
 }

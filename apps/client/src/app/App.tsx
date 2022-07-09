@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { IoMenu } from 'react-icons/io5';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 // import './App.css';
 import AppRouter from '../routing/AppRouter';
 
@@ -8,8 +8,7 @@ function App() {
   const [showContacts, setShowContacts] = useState(false);
 
   return (
-    <>
-      <div
+    <div
         className={`grid z-1 h-screen ease-out duration-1000 ${
           showContacts ? 'grid-cols-main-open' : 'grid-cols-main'
         }`}
@@ -62,7 +61,6 @@ function App() {
           </div>
         </section>
       </div>
-    </>
   );
 }
 

@@ -13,10 +13,15 @@ export function RegisterForm({ isRegistre }: RegisterFormProps) {
   const dispatch = useAppDispatch();
 
   const handleRegisterFormSubmit = (e: FormEvent<any>) => {
+    if (!isRegistre) {
+      const {} = e.currentTarget.elements.email
+
+
+    }
     e.preventDefault();
     dispatch(set({
         id: '123', email: 'test', username: '',
-        isLogin: false
+        isLogin: true
     }));
     // setUser({ id: '123', email: 'test' });
   };

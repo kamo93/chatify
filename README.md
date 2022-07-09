@@ -17,17 +17,11 @@ These capabilities include generating applications, libraries, etc as well as th
 Below are our core plugins:
 
 - [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
+  - `pnpm install --save-dev @nrwl/react`
 - Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
+  - `pnpm install --save-dev @nrwl/web`
 - [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+  - `pnpm install --save-dev @nrwl/node`
 
 There are also many [community plugins](https://nx.dev/community) you could add.
 
@@ -92,3 +86,20 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+## Mongo DB
+
+```
+sudo systemctl start mongod
+sudo systemctl status mongod
+sudo systemctl stop mongod
+```
+
+Currently using robo3t as client. To start robo3t `robo3t`
+
+## TODO list
+[] Adding country phone list
+[] move all px to rem or ems
+[] add routes per domain on the backend
+[] used pnpm instead of yarn
+[] moved to completly nx
